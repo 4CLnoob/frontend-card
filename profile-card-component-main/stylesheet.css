@@ -1,0 +1,88 @@
+body {
+    margin: auto;
+    padding: auto;
+    background-image: linear-gradient(hsl(185, 75%, 39%), hsl(227, 22%, 36%));
+}
+
+.container {
+    min-height: 100vh;
+    /* height of the browser viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-image: contain;
+    background: position x 1, y 0;
+    background-size: 100%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: hsl(0, 50%, 98%);
+    min-width: 35vh;
+    min-height: 45vh;
+    margin: auto;
+    padding-top: 20px;
+    align-items: center;
+    border: 1px;
+    border-radius: 1rem;
+    background-image: url("images/bg-pattern-card.svg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.photo img {
+    border-radius: 50%;
+    border: white;
+    border: .5rem;
+}
+
+.name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h3 {
+    padding: 1rem;
+}
+
+h5 {
+    display: flex;
+    flex-direction: row-reverse;
+    align-self: flex-end;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.bottomrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 1em;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 2em;
+    margin-left: 0;
+    margin-right: 0;
+    border-top: 1px solid;
+    border-color: lightgray;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    font-weight: 50;
+    color: grey;
+}
